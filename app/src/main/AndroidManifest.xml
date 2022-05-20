@@ -16,10 +16,10 @@
             android:name=".Signup.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.LoginActivity"
+            android:name=".StoryChat.StorychatActivity"
             android:exported="false" />
         <activity
-            android:name=".StoryChat.StorychatActivity"
+            android:name=".Login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".MotionLayout.MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         setupView()
     }
     private fun setupAction() {
-        binding.button.setOnClickListener {
+         binding.button.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
-    }
+   }
     private fun setupView() {
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
