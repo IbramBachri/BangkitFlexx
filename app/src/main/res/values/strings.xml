@@ -9,4 +9,16 @@
     <string name="desc_menu_4">Provide with many feature such as Group Chat Management, Broadcasting Message, Permission Management</string>
     <string name="desc_menu_2">Robust API to enable implementation of chat features without dealing with complexities of real-time communication</string>
     <string name="startmasaging">Start Messaging</string>
+    <string name="title_login_page">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_signup_page">Create Account</string>
+    <string name="name">Name</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="signup">Sign In</string>
+    <string name="title_welcome_page">BangkitFlexx</string>
+    <string name="message_welcome_page">Welcome to BangkitFlexx Chat Apps</string>
+    <string name="logout">LogOut</string>
+    <string name="message_main_page">Ini ACtivity story chat</string>
 </resources>

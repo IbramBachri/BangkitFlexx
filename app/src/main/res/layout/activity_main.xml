@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/Yellow"
     app:layoutDescription="@xml/activity_main_scene"
-    tools:context=".MainActivity">
+    tools:context=".MotionLayout.MainActivity">
 
     <ImageView
         android:id="@+id/logoMenu1"
