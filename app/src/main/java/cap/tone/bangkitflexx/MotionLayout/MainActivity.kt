@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
-import cap.tone.bangkitflexx.Login.LoginActivity
+import cap.tone.bangkitflexx.ui.Login.LoginActivity
 import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.databinding.ActivityMainBinding
 

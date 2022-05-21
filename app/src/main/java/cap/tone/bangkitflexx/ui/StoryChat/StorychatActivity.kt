@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.StoryChat
+package cap.tone.bangkitflexx.ui.StoryChat
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -14,11 +14,10 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import cap.tone.bangkitflexx.Login.LoginActivity
 import cap.tone.bangkitflexx.Model.UserPreference
 import cap.tone.bangkitflexx.MotionLayout.MainActivity
 import cap.tone.bangkitflexx.R
-import cap.tone.bangkitflexx.ViewModelFactory
+import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityStorychatBinding
 
 

@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.StoryChat
+package cap.tone.bangkitflexx.ui.Login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -8,15 +8,14 @@ import cap.tone.bangkitflexx.Model.UserModel
 import cap.tone.bangkitflexx.Model.UserPreference
 import kotlinx.coroutines.launch
 
-class StoryChatViewModel (private val pref: UserPreference) : ViewModel() {
+class LoginViewModel(private val pref: UserPreference) : ViewModel() {
     fun getUser(): LiveData<UserModel> {
         return pref.getUser().asLiveData()
     }
 
-    fun logout() {
+    fun login() {
         viewModelScope.launch {
-            pref.logout()
+            pref.login()
         }
     }
-
 }

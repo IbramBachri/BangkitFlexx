@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.Signup
+package cap.tone.bangkitflexx.ui.Signup
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
