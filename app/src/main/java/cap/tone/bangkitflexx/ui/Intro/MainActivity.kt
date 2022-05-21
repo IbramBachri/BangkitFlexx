@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.MotionLayout
+package cap.tone.bangkitflexx.ui.Intro
 
 import android.content.Intent
 import android.os.Build

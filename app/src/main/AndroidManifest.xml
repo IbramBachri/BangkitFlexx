@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MotionLayout.MainActivity"
+            android:name="cap.tone.bangkitflexx.ui.Intro.MainActivity"
             android:exported="true" />
     </application>
 

@@ -15,7 +15,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import cap.tone.bangkitflexx.Model.UserPreference
-import cap.tone.bangkitflexx.MotionLayout.MainActivity
+import cap.tone.bangkitflexx.ui.Intro.MainActivity
 import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityStorychatBinding
