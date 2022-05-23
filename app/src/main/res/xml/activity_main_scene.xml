@@ -55,7 +55,6 @@
 
     <ConstraintSet android:id="@+id/splash">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="1dp"
             android:layout_height="1dp"
@@ -67,12 +66,92 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
         </Constraint>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/titleIntro1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="55dp"
+            motion:layout_constraintEnd_toEndOf="@+id/logoIntro1"
+            motion:layout_constraintStart_toStartOf="@+id/logoIntro1"
+            motion:layout_constraintTop_toBottomOf="@+id/logoIntro1"/>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@id/descIntro1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            motion:layout_constraintEnd_toEndOf="@+id/titleIntro1"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/titleIntro1"
+            motion:layout_constraintTop_toBottomOf="@+id/titleIntro1"/>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot1"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="132dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline2"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline1"
+            motion:layout_constraintVertical_bias="1.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot2"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="12dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot1"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot1"
+            motion:layout_constraintVertical_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot3"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot2"
+            motion:layout_constraintStart_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot2"
+            motion:layout_constraintVertical_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot4"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="57dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot3"
+            motion:layout_constraintStart_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot3"
+            motion:layout_constraintVertical_bias="0.0">
+        <CustomAttribute
+            motion:attributeName="crossfade"
+            motion:customFloatValue="1" />
+        </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/start"
         motion:deriveConstraintsFrom="@+id/splash">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="157dp"
             android:layout_height="157dp"
@@ -84,12 +163,92 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
         </Constraint>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/titleIntro1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="55dp"
+            motion:layout_constraintEnd_toEndOf="@+id/logoIntro1"
+            motion:layout_constraintStart_toStartOf="@+id/logoIntro1"
+            motion:layout_constraintTop_toBottomOf="@+id/logoIntro1"/>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@id/descIntro1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            motion:layout_constraintEnd_toEndOf="@+id/titleIntro1"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/titleIntro1"
+            motion:layout_constraintTop_toBottomOf="@+id/titleIntro1"/>
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot1"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="132dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline2"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline1"
+            motion:layout_constraintVertical_bias="1.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot2"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="12dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot1"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot1"
+            motion:layout_constraintVertical_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot3"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot2"
+            motion:layout_constraintStart_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot2"
+            motion:layout_constraintVertical_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+
+        <Constraint
+            android:visibility="invisible"
+            android:id="@+id/dot4"
+            android:layout_width="22dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="57dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/dot3"
+            motion:layout_constraintStart_toStartOf="@+id/guideline1"
+            motion:layout_constraintTop_toTopOf="@+id/dot3"
+            motion:layout_constraintVertical_bias="0.0">
+        <CustomAttribute
+            motion:attributeName="crossfade"
+            motion:customFloatValue="1" />
+        </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/intro1"
         motion:deriveConstraintsFrom="@+id/start">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="157dp"
             android:layout_height="157dp"
@@ -108,7 +267,6 @@
             motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/titleIntro1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -131,7 +289,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/logoIntro2" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@id/descIntro1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -152,7 +309,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleIntro2" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot1"
             android:layout_width="34dp"
             android:layout_height="34dp"
@@ -168,7 +324,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot2"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -183,7 +338,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot3"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -198,7 +352,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot4"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -216,7 +369,6 @@
     <ConstraintSet android:id="@+id/intro2"
         motion:deriveConstraintsFrom="@+id/intro1">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="157dp"
             android:layout_height="157dp"
@@ -244,7 +396,6 @@
             motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/titleIntro1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -278,7 +429,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/logoIntro3" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@id/descIntro1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -309,7 +459,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleIntro3" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot1"
             android:layout_width="22dp"
             android:layout_height="34dp"
@@ -325,7 +474,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot2"
             android:layout_width="34dp"
             android:layout_height="0dp"
@@ -340,7 +488,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot3"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -355,7 +502,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot4"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -373,7 +519,6 @@
     <ConstraintSet android:id="@+id/intro3"
         motion:deriveConstraintsFrom="@+id/intro2">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="157dp"
             android:layout_height="157dp"
@@ -410,7 +555,6 @@
             motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/titleIntro1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -455,7 +599,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/logoIntro4" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@id/descIntro1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -496,7 +639,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleIntro4" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot1"
             android:layout_width="22dp"
             android:layout_height="34dp"
@@ -512,7 +654,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot2"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -527,7 +668,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot3"
             android:layout_width="34dp"
             android:layout_height="0dp"
@@ -542,7 +682,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot4"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -559,7 +698,6 @@
     <ConstraintSet android:id="@+id/intro4"
         motion:deriveConstraintsFrom="@+id/intro3">
         <Constraint
-            android:visibility="visible"
             android:id="@id/logoIntro1"
             android:layout_width="157dp"
             android:layout_height="157dp"
@@ -596,7 +734,6 @@
             motion:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/titleIntro1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -641,7 +778,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/logoIntro4"/>
 
         <Constraint
-            android:visibility="visible"
             android:id="@id/descIntro1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -682,7 +818,6 @@
             motion:layout_constraintTop_toBottomOf="@+id/titleIntro4"/>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot1"
             android:layout_width="22dp"
             android:layout_height="34dp"
@@ -698,7 +833,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot2"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -713,7 +847,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot3"
             android:layout_width="22dp"
             android:layout_height="0dp"
@@ -728,7 +861,6 @@
         </Constraint>
 
         <Constraint
-            android:visibility="visible"
             android:id="@+id/dot4"
             android:layout_width="34dp"
             android:layout_height="0dp"
@@ -741,6 +873,5 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
         </Constraint>
-
     </ConstraintSet>
 </MotionScene>

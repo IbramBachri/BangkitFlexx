@@ -49,7 +49,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:visibility="invisible"
         android:id="@+id/titleIntro1"
         style="@style/introTitle"
         android:text="@string/title_menu_1"
@@ -102,7 +101,6 @@
         app:layout_constraintTop_toBottomOf="@+id/logoIntro4"/>
 
     <TextView
-        android:visibility="invisible"
         android:id="@+id/descIntro1"
         style="@style/introDesc"
         android:text="@string/desc_menu_1"
@@ -145,7 +143,6 @@
         app:layout_constraintTop_toBottomOf="@+id/titleIntro4" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:visibility="invisible"
         android:id="@+id/dot1"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
@@ -160,7 +157,6 @@
         app:layout_constraintVertical_bias="1.0"/>
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:visibility="invisible"
         android:id="@+id/dot2"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
@@ -174,7 +170,6 @@
         app:layout_constraintVertical_bias="0.0"/>
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:visibility="invisible"
         android:id="@+id/dot3"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
@@ -188,7 +183,6 @@
         app:layout_constraintVertical_bias="0.0"/>
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:visibility="invisible"
         android:id="@+id/dot4"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
