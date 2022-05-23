@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Yellow">
+    android:background="@color/yellow">
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/logoIntro1"
@@ -48,7 +48,7 @@
 
     <TextView
         android:id="@+id/titleIntro1"
-        style="@style/introTitle"
+        style="@style/regular_25"
         android:text="@string/title_menu_1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -61,7 +61,7 @@
 
     <TextView
         android:id="@+id/titleIntro2"
-        style="@style/introTitle"
+        style="@style/regular_25"
         android:text="@string/title_menu_2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -74,7 +74,7 @@
 
     <TextView
         android:id="@+id/titleIntro3"
-        style="@style/introTitle"
+        style="@style/regular_25"
         android:text="@string/title_menu_3"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -87,7 +87,7 @@
 
     <TextView
         android:id="@+id/titleIntro4"
-        style="@style/introTitle"
+        style="@style/regular_25"
         android:text="@string/title_menu_4"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -100,7 +100,7 @@
 
     <TextView
         android:id="@+id/descIntro1"
-        style="@style/introDesc"
+        style="@style/regular_15"
         android:text="@string/desc_menu_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
 
     <TextView
         android:id="@+id/descIntro2"
-        style="@style/introDesc"
+        style="@style/regular_15"
         android:text="@string/desc_menu_2"
         android:layout_marginTop="37dp"
         app:layout_constraintEnd_toEndOf="@+id/titleIntro2"
@@ -122,7 +122,7 @@
 
     <TextView
         android:id="@+id/descIntro3"
-        style="@style/introDesc"
+        style="@style/regular_15"
         android:text="@string/desc_menu_3"
         android:layout_marginTop="37dp"
         app:layout_constraintEnd_toEndOf="@+id/titleIntro3"
@@ -132,7 +132,7 @@
 
     <TextView
         android:id="@+id/descIntro4"
-        style="@style/introDesc"
+        style="@style/regular_15"
         android:text="@string/desc_menu_4"
         android:layout_marginTop="37dp"
         app:layout_constraintEnd_toEndOf="@+id/titleIntro4"
@@ -144,7 +144,7 @@
         android:id="@+id/dot1"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
-        app:tint="@color/Red"
+        app:tint="@color/red"
         android:layout_width="22dp"
         android:layout_height="34dp"
         android:layout_marginEnd="57dp"
@@ -158,7 +158,7 @@
         android:id="@+id/dot2"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
-        app:tint="@color/Red"
+        app:tint="@color/red"
         android:layout_width="34dp"
         android:layout_height="0dp"
         android:layout_marginEnd="12dp"
@@ -171,7 +171,7 @@
         android:id="@+id/dot3"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
-        app:tint="@color/Red"
+        app:tint="@color/red"
         android:layout_width="34dp"
         android:layout_height="0dp"
         android:layout_marginStart="12dp"
@@ -184,7 +184,7 @@
         android:id="@+id/dot4"
         app:altSrc="@drawable/ic_circle_full_30"
         app:srcCompat="@drawable/ic_circle_full_24"
-        app:tint="@color/Red"
+        app:tint="@color/red"
         android:layout_width="34dp"
         android:layout_height="0dp"
         android:layout_marginStart="57dp"
@@ -223,7 +223,7 @@
         android:layout_width="309dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/Red"
+        android:backgroundTint="@color/red"
         android:text="@string/startmasaging"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Yellow"
+    android:background="@color/yellow"
     tools:context=".ui.Login.LoginActivity">
 
     <ImageView
@@ -114,7 +114,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/Red"
+        android:backgroundTint="@color/red"
         android:text="@string/login"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +127,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/Red"
+        android:backgroundTint="@color/red"
         android:text="@string/title_signup_page"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
