@@ -12,15 +12,15 @@
         android:theme="@style/Theme.BangkitFlexx"
         tools:targetApi="31">
         <activity
-            android:name=".NavDrawActivity"
+            android:name=".ui.NavDrawActivity"
             android:exported="false"
             android:label="@string/title_activity_nav_draw"
             android:theme="@style/Theme.BangkitFlexx.NoActionBar" />
         <activity
-            android:name=".Signup.SignupActivity"
+            android:name=".ui.Signup.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".StoryChat.StorychatActivity"
+            android:name=".ui.StoryChat.StorychatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Intro.MainActivity"

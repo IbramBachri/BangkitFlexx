@@ -20,6 +20,7 @@ class StorychatActivity : AppCompatActivity() {
     private lateinit var rvUser: RecyclerView
     private val list = ArrayList<User>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_storychat)

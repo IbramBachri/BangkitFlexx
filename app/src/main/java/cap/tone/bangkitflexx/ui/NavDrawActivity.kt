@@ -1,5 +1,6 @@
 package cap.tone.bangkitflexx.ui
 
+import android.content.Context
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -11,7 +12,13 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import cap.tone.bangkitflexx.ui.databinding.ActivityNavDrawBinding
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
+import cap.tone.bangkitflexx.R
+import cap.tone.bangkitflexx.databinding.ActivityNavDrawBinding
+
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
 class NavDrawActivity : AppCompatActivity() {
 

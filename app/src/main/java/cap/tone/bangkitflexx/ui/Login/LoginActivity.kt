@@ -21,6 +21,7 @@ import cap.tone.bangkitflexx.ui.Signup.SignupActivity
 import cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity
 import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityLoginBinding
+import cap.tone.bangkitflexx.ui.NavDrawActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -87,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
                         setTitle("Yeah!")
                         setMessage("Anda berhasil login?")
                         setPositiveButton("Lanjut") { _, _ ->
-                            val intent = Intent(context, StorychatActivity::class.java)
+                            val intent = Intent(context, NavDrawActivity::class.java)
                             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             startActivity(intent)
                             finish()
