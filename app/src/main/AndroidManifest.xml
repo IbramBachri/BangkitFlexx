@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE manifest [<!ELEMENT manifest (application)*><!ATTLIST manifestxmlns:android CDATA #REQUIREDxmlns:tools CDATA #REQUIREDpackage CDATA #REQUIRED><!ELEMENT application (activity)*><!ATTLIST applicationandroid:allowBackup CDATA #REQUIREDandroid:icon CDATA #REQUIREDandroid:label CDATA #REQUIREDandroid:roundIcon CDATA #REQUIREDandroid:supportsRtl CDATA #REQUIREDandroid:theme CDATA #REQUIREDtools:targetApi CDATA #REQUIRED><!ELEMENT activity (intent-filter)*><!ATTLIST activityandroid:exported CDATA #REQUIREDandroid:label CDATA #IMPLIEDandroid:name CDATA #REQUIREDandroid:theme CDATA #IMPLIED><!ELEMENT intent-filter (action|category)*><!ELEMENT action (#PCDATA)><!ATTLIST actionandroid:name CDATA #REQUIRED><!ELEMENT category (#PCDATA)><!ATTLIST categoryandroid:name CDATA #REQUIRED>]>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="cap.tone.bangkitflexx">
@@ -12,15 +12,21 @@
         android:theme="@style/Theme.BangkitFlexx"
         tools:targetApi="31">
         <activity
-            android:name=".NavDrawActivity"
+            android:name=".ui.PrivateChat.PrivateChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GroupChat.GroupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NavDrawActivity"
             android:exported="false"
             android:label="@string/title_activity_nav_draw"
             android:theme="@style/Theme.BangkitFlexx.NoActionBar" />
         <activity
-            android:name=".Signup.SignupActivity"
+            android:name=".ui.Signup.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".StoryChat.StorychatActivity"
+            android:name=".ui.StoryChat.StorychatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Intro.MainActivity"

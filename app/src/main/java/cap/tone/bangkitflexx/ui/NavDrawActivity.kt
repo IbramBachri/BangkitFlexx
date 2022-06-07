@@ -11,7 +11,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import cap.tone.bangkitflexx.ui.databinding.ActivityNavDrawBinding
+import cap.tone.bangkitflexx.R
+import cap.tone.bangkitflexx.databinding.ActivityNavDrawBinding
 
 class NavDrawActivity : AppCompatActivity() {
 
