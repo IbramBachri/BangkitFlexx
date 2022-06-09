@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.ui.GroupChat
+package cap.tone.bangkitflexx.ui.chat.group
 
 import android.view.LayoutInflater
 import android.view.View

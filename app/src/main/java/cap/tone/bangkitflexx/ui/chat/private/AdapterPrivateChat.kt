@@ -1,5 +1,6 @@
-package cap.tone.bangkitflexx.ui.PrivateChat
+package cap.tone.bangkitflexx.ui.chat.private
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,11 +12,12 @@ import cap.tone.bangkitflexx.R
 class AdapterPrivateChat constructor(private val listViewType: List<Int>, private val listChat: List<MessageModel>) : RecyclerView.Adapter<AdapterPrivateChat.ViewHolder>() {
 
     companion object {
-        val VIEW_TYPE_DATE = 0
-        val VIEW_TYPE_SELF = 1
-        val VIEW_TYPE_OTHER = 2
+        const val VIEW_TYPE_DATE = 0
+        const val VIEW_TYPE_SELF = 1
+        const val VIEW_TYPE_OTHER = 2
     }
 
+    @SuppressLint("InflateParams")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return when (viewType) {
