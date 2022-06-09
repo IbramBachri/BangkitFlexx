@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.ui
+package cap.tone.bangkitflexx.ui.drawer
 
 import android.content.Context
 import android.os.Bundle

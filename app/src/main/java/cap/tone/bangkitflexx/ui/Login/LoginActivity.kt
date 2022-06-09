@@ -5,23 +5,22 @@ import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import cap.tone.bangkitflexx.Model.UserModel
 import cap.tone.bangkitflexx.Model.UserPreference
-import cap.tone.bangkitflexx.ui.Signup.SignupActivity
-import cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity
-import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityLoginBinding
-import cap.tone.bangkitflexx.ui.NavDrawActivity
+import cap.tone.bangkitflexx.helper.ViewModelFactory
+import cap.tone.bangkitflexx.ui.Signup.SignupActivity
+import cap.tone.bangkitflexx.ui.drawer.NavDrawActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 

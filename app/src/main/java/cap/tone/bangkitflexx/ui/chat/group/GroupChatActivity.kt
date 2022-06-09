@@ -1,13 +1,10 @@
-package cap.tone.bangkitflexx.ui.GroupChat
+package cap.tone.bangkitflexx.ui.chat.group
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import cap.tone.bangkitflexx.Model.MessageModel
-import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.databinding.ActivityGroupChatBinding
-import cap.tone.bangkitflexx.databinding.ActivityPrivateChatBinding
-import cap.tone.bangkitflexx.ui.PrivateChat.AdapterPrivateChat
 
 class GroupChatActivity : AppCompatActivity() {
     private lateinit var binding : ActivityGroupChatBinding

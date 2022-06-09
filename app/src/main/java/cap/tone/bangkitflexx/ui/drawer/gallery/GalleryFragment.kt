@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.ui.ui.gallery
+package cap.tone.bangkitflexx.ui.drawer.gallery
 
 import android.os.Bundle
 import android.view.LayoutInflater
