@@ -6,9 +6,11 @@ import android.content.Context
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -18,20 +20,23 @@ import cap.tone.bangkitflexx.Model.UserModel
 import cap.tone.bangkitflexx.Model.UserPreference
 import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivitySignupBinding
+import com.google.firebase.auth.FirebaseAuth
 
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
     private lateinit var signupViewModel: SignupViewModel
-
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        firebaseAuth = FirebaseAuth.getInstance()
+
         setupView()
-        setupViewModel()
+        //setupViewModel()
         setupAction()
         playAnimation()
     }
@@ -49,12 +54,12 @@ class SignupActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-    private fun setupViewModel() {
-        signupViewModel = ViewModelProvider(
-            this,
-            ViewModelFactory(UserPreference.getInstance(dataStore))
-        )[SignupViewModel::class.java]
-    }
+//    private fun setupViewModel() {
+//        signupViewModel = ViewModelProvider(
+//            this,
+//            ViewModelFactory(UserPreference.getInstance(dataStore))
+//        )[SignupViewModel::class.java]
+//    }
 
     private fun setupAction() {
         binding.signupButton.setOnClickListener {
@@ -72,16 +77,28 @@ class SignupActivity : AppCompatActivity() {
                     binding.passwordEditTextLayout.error = "Masukkan password"
                 }
                 else -> {
-                    signupViewModel.saveUser(UserModel(name, email, password, false))
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Yeah!")
-                        setMessage("Akunnya sudah jadi nih. ")
-                        setPositiveButton("Lanjut") { _, _ ->
-                            finish()
+                    firebaseAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener {
+                        if(it.isSuccessful) {
+                            Log.d("success create account",it.toString())
+                            AlertDialog.Builder(this).apply {
+                                setTitle("Yeah!")
+                                setMessage("Akunnya sudah jadi nih. ")
+                                setPositiveButton("Lanjut") { _, _ ->
+                                    finish()
+                                }
+                                create()
+                                show()
+                            }
+                        } else {
+                            Toast.makeText(this,it.exception.toString(),
+                                Toast.LENGTH_SHORT).show()
+                            Log.e("error create account ",it.exception.toString())
                         }
-                        create()
-                        show()
                     }
+
+                    //signupViewModel.saveUser(UserModel(name, email, password, false))
+
                 }
             }
         }
