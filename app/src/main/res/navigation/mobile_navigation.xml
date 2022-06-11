@@ -22,19 +22,10 @@
         android:name="cap.tone.bangkitflexx.ui.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
     <activity
-        android:id="@+id/loginActivity"
-        android:name="cap.tone.bangkitflexx.ui.Login.LoginActivity"
-        android:label="activity_login"
-        tools:layout="@layout/activity_login" />
-    <activity
-        android:id="@+id/signupActivity"
-        android:name="cap.tone.bangkitflexx.ui.Signup.SignupActivity"
-        android:label="activity_signup"
-        tools:layout="@layout/activity_signup" />
-    <activity
-        android:id="@+id/storychatActivity"
-        android:name="cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity"
-        android:label="activity_storychat"
-        tools:layout="@layout/activity_storychat" />
+        android:id="@+id/na_PM"
+        android:name="cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity"
+        android:label="@string/PM"
+        tools:layout="@layout/activity_pmactivity" />
 </navigation>

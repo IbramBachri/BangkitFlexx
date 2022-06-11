@@ -16,5 +16,9 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_settings_24"
             android:title="@string/action_settings" />
+        <item
+            android:id="@+id/na_PM"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/PM" />
     </group>
 </menu>

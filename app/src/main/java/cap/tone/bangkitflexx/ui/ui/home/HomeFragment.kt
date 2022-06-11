@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         binding.rvUser.layoutManager = LinearLayoutManager(requireActivity())
         binding.rvUser.setHasFixedSize(true)
         val listUserAdapter = ListUserAdapter(list)

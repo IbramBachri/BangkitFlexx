@@ -1,6 +1,7 @@
 package cap.tone.bangkitflexx.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
@@ -17,6 +18,9 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.databinding.ActivityNavDrawBinding
+import cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity
+import cap.tone.bangkitflexx.ui.Signup.SignupActivity
+
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -32,6 +36,7 @@ class NavDrawActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarNavDraw.toolbar)
+
 
         binding.appBarNavDraw.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -49,6 +54,7 @@ class NavDrawActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

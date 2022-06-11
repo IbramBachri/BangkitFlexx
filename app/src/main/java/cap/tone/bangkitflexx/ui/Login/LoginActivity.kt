@@ -22,6 +22,7 @@ import cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity
 import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityLoginBinding
 import cap.tone.bangkitflexx.ui.NavDrawActivity
+import cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
