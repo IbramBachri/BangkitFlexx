@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "898178418014",
+    "firebase_url": "https://capstone-project-ioh-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "capstone-project-ioh",
+    "storage_bucket": "capstone-project-ioh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898178418014:android:9ff93dfce5b01efbc53bcf",
+        "android_client_info": {
+          "package_name": "cap.tone.bangkitflexx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898178418014-dlvv6tnmmvq67a2v19ou5gvk1dthi7jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFbV7r3d6budJUTV6vxHA8Vd_5-vED9Ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898178418014-dlvv6tnmmvq67a2v19ou5gvk1dthi7jq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,24 +5,25 @@ import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import cap.tone.bangkitflexx.Model.UserModel
 import cap.tone.bangkitflexx.Model.UserPreference
-import cap.tone.bangkitflexx.ui.Signup.SignupActivity
-import cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity
-import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivityLoginBinding
-import cap.tone.bangkitflexx.ui.NavDrawActivity
-import cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity
+import cap.tone.bangkitflexx.helper.ViewModelFactory
+import cap.tone.bangkitflexx.ui.Signup.SignupActivity
+import cap.tone.bangkitflexx.ui.drawer.NavDrawActivity
+import com.google.firebase.auth.FirebaseAuth
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -30,14 +31,15 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLoginBinding
     private lateinit var user: UserModel
-
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        firebaseAuth = FirebaseAuth.getInstance()
         setupView()
-        setupViewModel()
+        //setupViewModel()
         setupAction()
         playAnimation()
     }
@@ -84,19 +86,30 @@ class LoginActivity : AppCompatActivity() {
                     binding.passwordEditTextLayout.error = "Password tidak sesuai"
                 }
                 else -> {
-                    loginViewModel.login()
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Yeah!")
-                        setMessage("Anda berhasil login?")
-                        setPositiveButton("Lanjut") { _, _ ->
-                            val intent = Intent(context, NavDrawActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
+                    firebaseAuth.signInWithEmailAndPassword(email,password)
+                        .addOnCompleteListener { task->
+                            if(task.isSuccessful) {
+                                AlertDialog.Builder(this).apply {
+                                    setTitle("Yeah!")
+                                    setMessage("Anda berhasil login?")
+                                    setPositiveButton("Lanjut") { _, _ ->
+                                        val intent = Intent(context, NavDrawActivity::class.java)
+                                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                                        startActivity(intent)
+                                        finish()
+                                    }
+                                    create()
+                                    show()
+                                }
+                                Log.d("berhasil login", task.isSuccessful.toString())
+                            } else {
+                                Log.e("gagal login", task.exception.toString())
+                                Toast.makeText(this, "Gagal Login : ${task.exception.toString()}",
+                                Toast.LENGTH_SHORT).show()
+                            }
                         }
-                        create()
-                        show()
-                    }
+                    //loginViewModel.login()
+
                 }
             }
         }
@@ -128,4 +141,12 @@ class LoginActivity : AppCompatActivity() {
         }.start()
     }
 
+    override fun onStart() {
+        super.onStart()
+        if(firebaseAuth.currentUser != null) {
+            val intent = Intent(this, NavDrawActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+        }
+    }
 }

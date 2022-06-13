@@ -1,9 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_chat_other_group"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="8dp"
-    android:paddingTop="8dp">
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="40dp"
+    tools:ignore="RtlSymmetry">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/icon_chat_other"
@@ -11,6 +14,8 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:src="@drawable/ic_baseline_account_circle_24" />
 
     <RelativeLayout
@@ -18,10 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/icon_chat_other"
         android:background="@drawable/chat_other"
-        android:paddingBottom="8dp"
         android:paddingLeft="8dp"
+        android:paddingTop="8dp"
         android:paddingRight="8dp"
-        android:paddingTop="8dp">
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/message_chat_other"
@@ -34,8 +39,8 @@
             android:id="@+id/time_chat_other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_below="@+id/message_chat_other"
+            android:layout_alignParentEnd="true"
             android:text="23:59"
             android:textStyle="italic" />
 

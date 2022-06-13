@@ -1,7 +1,6 @@
 package cap.tone.bangkitflexx
 
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import cap.tone.bangkitflexx.database.User
-import cap.tone.bangkitflexx.ui.GroupChat.GroupChatActivity
-import cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity
+import cap.tone.bangkitflexx.ui.chat.group.GroupChatActivity
+import cap.tone.bangkitflexx.ui.chat.private.PrivateChatActivity
 
 class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<ListUserAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -31,7 +30,7 @@ class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adap
         holder.tvName.text = name
         holder.tvDescription.text = description
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, GroupChatActivity::class.java)
+            val intent = Intent(holder.itemView.context, PrivateChatActivity::class.java)
             holder.itemView.context.startActivity(intent)
         }
     }
