@@ -37,4 +37,9 @@
         android:name="cap.tone.bangkitflexx.ui.StoryChat.StorychatActivity"
         android:label="activity_storychat"
         tools:layout="@layout/activity_storychat" />
+    <activity
+        android:id="@+id/na_PM"
+        android:name="cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity"
+        android:label="activity_pmactivity"
+        tools:layout="@layout/activity_pmactivity" />
 </navigation>

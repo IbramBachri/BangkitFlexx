@@ -1,8 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-parcelize'
+    id 'kotlin-android-extensions'
+    //id 'kotlin-parcelize'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -73,4 +75,15 @@ dependencies {
     implementation "androidx.room:room-ktx:2.4.2"
     implementation 'androidx.room:room-runtime:2.4.2'
     kapt 'androidx.room:room-compiler:2.4.2'
+
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.5'
+    implementation 'com.google.firebase:firebase-auth:21.0.5'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+
 }

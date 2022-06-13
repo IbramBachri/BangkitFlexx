@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="cap.tone.bangkitflexx">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,12 +13,21 @@
         android:theme="@style/Theme.BangkitFlexx"
         tools:targetApi="31">
         <activity
-            android:name=".ui.NavDrawActivity"
+            android:name=".ui.drawer.NavDrawActivity"
             android:exported="false"
             android:label="@string/title_activity_nav_draw"
             android:theme="@style/Theme.BangkitFlexx.NoActionBar" />
         <activity
             android:name=".ui.Signup.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProjectManagement.TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProjectManagement.PMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProjectManagement.HIstoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.StoryChat.StorychatActivity"
