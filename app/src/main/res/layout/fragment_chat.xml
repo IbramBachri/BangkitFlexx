@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_background"
+    android:padding="10dp"
+    tools:context=".ui.chat.ChatFragment">
+
+    <ImageButton
+        android:id="@+id/send_camera"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/send_gallery"
+        android:layout_width="67dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="11dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/photo"
+        app:layout_constraintBottom_toBottomOf="@+id/send_camera"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/send_camera" />
+
+    <ImageButton
+        android:id="@+id/send_contact"
+        android:layout_width="67dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contact"
+        app:layout_constraintBottom_toBottomOf="@+id/send_document"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/send_document" />
+
+    <ImageButton
+        android:id="@+id/send_document"
+        android:layout_width="67dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="11dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/document"
+        app:layout_constraintBottom_toBottomOf="@+id/send_gallery"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/send_gallery" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Camera"
+        app:layout_constraintEnd_toEndOf="@+id/send_camera"
+        app:layout_constraintStart_toStartOf="@+id/send_camera"
+        app:layout_constraintTop_toBottomOf="@+id/send_camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Contact"
+        app:layout_constraintEnd_toEndOf="@+id/send_contact"
+        app:layout_constraintStart_toStartOf="@+id/send_contact"
+        app:layout_constraintTop_toBottomOf="@+id/send_contact" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Document"
+        app:layout_constraintEnd_toEndOf="@+id/send_document"
+        app:layout_constraintStart_toStartOf="@+id/send_document"
+        app:layout_constraintTop_toBottomOf="@+id/send_document" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Gallery"
+        app:layout_constraintEnd_toEndOf="@+id/send_gallery"
+        app:layout_constraintStart_toStartOf="@+id/send_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/send_gallery" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginEnd="188dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
