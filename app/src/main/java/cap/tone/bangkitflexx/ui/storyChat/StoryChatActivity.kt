@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.ui.StoryChat
+package cap.tone.bangkitflexx.ui.storyChat
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ import cap.tone.bangkitflexx.database.User
 import cap.tone.bangkitflexx.databinding.ActivityStorychatBinding
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
-class StorychatActivity : AppCompatActivity() {
+class StoryChatActivity : AppCompatActivity() {
     private lateinit var mainViewModel: StoryChatViewModel
     private lateinit var binding: ActivityStorychatBinding
     private lateinit var rvUser: RecyclerView

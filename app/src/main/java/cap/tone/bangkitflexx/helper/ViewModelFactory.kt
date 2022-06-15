@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import cap.tone.bangkitflexx.ui.Login.LoginViewModel
 import cap.tone.bangkitflexx.Model.UserPreference
 import cap.tone.bangkitflexx.ui.Signup.SignupViewModel
-import cap.tone.bangkitflexx.ui.StoryChat.StoryChatViewModel
+import cap.tone.bangkitflexx.ui.storyChat.StoryChatViewModel
 
 class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
 

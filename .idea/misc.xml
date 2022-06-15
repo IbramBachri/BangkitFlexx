@@ -45,24 +45,31 @@
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/drawable/ic_circle_full_24.xml" value="0.1605" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/drawable/item_chat_self.xml" value="0.1" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_nav_draw.xml" value="0.22" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_nav_draw.xml" value="0.33" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_private_chat.xml" value="0.32" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_settings.xml" value="0.25" />
-        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_storychat.xml" value="0.11458333333333333" />
-        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/app_bar_nav_draw.xml" value="0.11458333333333333" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_signup.xml" value="0.11666666666666667" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/activity_storychat.xml" value="0.1" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/app_bar_nav_draw.xml" value="0.21" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/content_nav_draw.xml" value="0.33" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_chat.xml" value="0.20416666666666666" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_chat_.xml" value="0.75" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_home.xml" value="0.11666666666666667" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/fragment_story_chat.xml" value="0.11666666666666667" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_date.xml" value="0.5" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_other_group.xml" value="0.75" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_other_private.xml" value="0.5" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_self.xml" value="0.1" />
-        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_chat_user.xml" value="0.33" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_todo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/item_user.xml" value="0.1" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/layout/nav_header_nav_draw.xml" value="0.5" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/menu/menu_bar_frst.xml" value="0.1" />
         <entry key="..\:/Data/Document/Android/BangkitFlexx/app/app/src/main/res/menu/nav_draw.xml" value="0.20416666666666666" />
       </map>
     </option>

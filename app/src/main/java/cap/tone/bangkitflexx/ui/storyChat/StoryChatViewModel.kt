@@ -1,4 +1,4 @@
-package cap.tone.bangkitflexx.ui.StoryChat
+package cap.tone.bangkitflexx.ui.storyChat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

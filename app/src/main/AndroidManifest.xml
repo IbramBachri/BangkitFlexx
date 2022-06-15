@@ -31,7 +31,7 @@
             android:name=".ui.ProjectManagement.HIstoryActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.StoryChat.StorychatActivity"
+            android:name=".ui.storyChat.StoryChatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.Intro.MainActivity"

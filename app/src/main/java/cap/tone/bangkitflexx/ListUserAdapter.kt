@@ -13,9 +13,9 @@ import cap.tone.bangkitflexx.ui.chat.private.PrivateChatActivity
 
 class ListUserAdapter(private val listUser: ArrayList<User>) : RecyclerView.Adapter<ListUserAdapter.ListViewHolder>() {
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
-        var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        var tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+        var imgPhoto: ImageView = itemView.findViewById(R.id.tv_story_img)
+        var tvName: TextView = itemView.findViewById(R.id.tv_story_name)
+        var tvDescription: TextView = itemView.findViewById(R.id.tv_story_email)
 
     }
 

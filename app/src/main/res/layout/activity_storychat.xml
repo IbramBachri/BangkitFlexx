@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.StoryChat.StorychatActivity">
+    tools:context=".ui.storyChat.StoryChatActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_user"
+        android:id="@+id/rv_story_goblok"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
