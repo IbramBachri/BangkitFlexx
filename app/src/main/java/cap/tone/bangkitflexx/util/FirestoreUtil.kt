@@ -2,7 +2,7 @@ package cap.tone.bangkitflexx.util
 
 import android.content.Context
 import android.util.Log
-import cap.tone.bangkitflexx.Model.User
+import cap.tone.bangkitflexx.model.User
 import cap.tone.bangkitflexx.recyclerView.item.StoryChatItem
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
@@ -21,7 +21,9 @@ object FirestoreUtil {
     fun initCurrentUserIfFirstTime(onComplete: () -> Unit) {
         currentUserDocRef.get().addOnSuccessListener { documentSnapshot ->
             if (!documentSnapshot.exists()) {
-                val newUser = User(FirebaseAuth.getInstance().currentUser?.displayName ?: "", "", "", "", null, mutableListOf())
+                val newUser = User(FirebaseAuth.getInstance().currentUser?.displayName ?: "",
+                    FirebaseAuth.getInstance().currentUser?.email ?:"",
+                    "", "", null, mutableListOf())
                 currentUserDocRef.set(newUser).addOnSuccessListener {
                     onComplete()
                 }

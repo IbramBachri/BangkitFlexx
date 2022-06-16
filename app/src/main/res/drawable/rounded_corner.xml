@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
         <shape>
-            <corners android:radius="22dp" />
+            <corners android:radius="20dp" />
             <solid android:color="@color/red" />
         </shape>
     </item>
@@ -11,7 +11,7 @@
     <!-- State Pressed-->
     <item android:state_pressed="true">
         <shape>
-            <corners android:radius="22dp" />
+            <corners android:radius="20dp" />
             <solid android:color="@color/red" />
         </shape>
     </item>

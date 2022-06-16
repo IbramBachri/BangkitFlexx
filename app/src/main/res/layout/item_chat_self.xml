@@ -1,23 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_chat_self"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="12dp"
-    android:paddingTop="12dp"
-    android:paddingStart="40dp"
-    tools:ignore="RtlSymmetry"
-    android:gravity="right">
+    android:padding="15dp"
+    android:gravity="right"
+    android:paddingStart="80dp">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/chat_self"
-        android:paddingLeft="8dp"
-        android:paddingTop="8dp"
-        android:paddingRight="8dp"
-        android:paddingBottom="8dp"
-        tools:ignore="UselessParent">
+        android:padding="5dp">
 
         <TextView
             android:id="@+id/message_chat_self"
@@ -25,21 +20,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:paddingBottom="5dp"
-            android:text="Message" />
+            android:gravity="right"
+            android:text="@string/lorem_ipsum" />
 
         <TextView
             android:id="@+id/time_chat_self"
             style="@style/regular_8_gray"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/message_chat_self"
+            android:layout_below="@id/message_chat_self"
             android:layout_alignParentEnd="true"
-            android:gravity="left"
-            android:paddingRight="5dp"
+            android:padding="3dp"
             android:text="23:59" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tv_send_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_alignStart="@+id/layout"
+        android:layout_alignEnd="@+id/layout"
+        android:layout_marginTop="6dp" />
 
 </RelativeLayout>

@@ -3,58 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/storyChatFragment">
+    app:startDestination="@id/nav_story_chat">
 
-    <fragment
-        android:id="@+id/nav_home"
-        android:name="cap.tone.bangkitflexx.ui.drawer.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="cap.tone.bangkitflexx.ui.drawer.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="cap.tone.bangkitflexx.ui.drawer.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <activity
-        android:id="@+id/loginActivity"
-        android:name="cap.tone.bangkitflexx.ui.Login.LoginActivity"
-        android:label="activity_login"
-        tools:layout="@layout/activity_login" />
-    <activity
-        android:id="@+id/signupActivity"
-        android:name="cap.tone.bangkitflexx.ui.Signup.SignupActivity"
-        android:label="activity_signup"
-        tools:layout="@layout/activity_signup" />
-    <activity
-        android:id="@+id/storychatActivity"
-        android:name="cap.tone.bangkitflexx.ui.storyChat.StoryChatActivity"
-        android:label="activity_storychat"
-        tools:layout="@layout/activity_storychat" />
     <activity
         android:id="@+id/nav_project_manager"
-        android:name="cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity"
-        android:label="activity_pmactivity"
+        android:name="cap.tone.bangkitflexx.ui.projectManagement.PMActivity"
+        android:label="project manager"
         tools:layout="@layout/activity_pmactivity" />
     <fragment
-        android:id="@+id/chatFragment"
-        android:name="cap.tone.bangkitflexx.ui.chat.ChatFragment"
-        android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />
+        android:id="@+id/nav_story_chat"
+        android:name="cap.tone.bangkitflexx.ui.storyChat.StoryChatFragment"
+        android:label="story chat"
+        tools:layout="@layout/fragment_story_chat" />
+    <fragment
+        android:id="@+id/nav_saved_msg"
+        android:name="cap.tone.bangkitflexx.ui.savedMsg.SavedMsgFragment"
+        android:label="saved message"
+        tools:layout="@layout/fragment_saved_msg" />
     <activity
-        android:id="@+id/settingsActivity"
+        android:id="@+id/nav_settings"
         android:name="cap.tone.bangkitflexx.ui.settings.SettingsActivity"
-        android:label="activity_settings"
+        android:label="settings"
         tools:layout="@layout/activity_settings" />
     <fragment
-        android:id="@+id/storyChatFragment"
-        android:name="cap.tone.bangkitflexx.ui.storyChat.StoryChatFragment"
-        android:label="fragment_story_chat"
-        tools:layout="@layout/fragment_story_chat" />
+        android:id="@+id/nav_about"
+        android:name="cap.tone.bangkitflexx.ui.savedMsg.SavedMsgFragment"
+        android:label="about"
+        tools:layout="@layout/fragment_saved_msg" />
+
+
 </navigation>

@@ -1,28 +1,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_chat_date"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="8dp"
-    android:paddingTop="8dp">
+    android:padding="15dp"
+    android:gravity="center">
 
     <RelativeLayout
+        android:id="@+id/layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/chat_date"
-        android:paddingLeft="14dp"
-        android:paddingTop="3dp"
-        android:paddingRight="14dp"
-        android:paddingBottom="3dp"
-        tools:ignore="UselessParent">
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/chat_date"
+            android:id="@+id/chat_time"
+            style="@style/regular_10_white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="31 DEC"
-            android:textColor="#212121" />
-
-    </RelativeLayout>
-
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="Mon, Dec 31" />
+    </RelativeLayout>>
 </RelativeLayout>

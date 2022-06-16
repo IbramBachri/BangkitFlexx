@@ -15,10 +15,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
-import androidx.lifecycle.ViewModelProvider
-import cap.tone.bangkitflexx.Model.UserModel
-import cap.tone.bangkitflexx.Model.UserPreference
-import cap.tone.bangkitflexx.helper.ViewModelFactory
 import cap.tone.bangkitflexx.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 

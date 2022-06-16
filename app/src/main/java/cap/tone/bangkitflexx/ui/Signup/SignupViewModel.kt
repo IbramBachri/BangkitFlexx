@@ -2,12 +2,8 @@ package cap.tone.bangkitflexx.ui.Signup
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import cap.tone.bangkitflexx.Model.UserModel
-import cap.tone.bangkitflexx.Model.UserPreference
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
+import cap.tone.bangkitflexx.model.UserModel
+import cap.tone.bangkitflexx.model.UserPreference
 import kotlinx.coroutines.launch
 
 class SignupViewModel(private val pref: UserPreference) : ViewModel() {

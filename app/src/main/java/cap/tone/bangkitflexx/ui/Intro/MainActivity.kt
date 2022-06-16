@@ -2,13 +2,12 @@ package cap.tone.bangkitflexx.ui.Intro
 
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
-import cap.tone.bangkitflexx.ui.Login.LoginActivity
-import cap.tone.bangkitflexx.R
+import androidx.appcompat.app.AppCompatActivity
 import cap.tone.bangkitflexx.databinding.ActivityMainBinding
+import cap.tone.bangkitflexx.ui.Login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,5 +37,4 @@ class MainActivity : AppCompatActivity() {
         }
         supportActionBar?.hide()
     }
-
 }

@@ -1,9 +1,9 @@
 package cap.tone.bangkitflexx.ui.drawer
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -18,14 +18,17 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.databinding.ActivityNavDrawBinding
-import cap.tone.bangkitflexx.ui.ProjectManagement.PMActivity
-import cap.tone.bangkitflexx.ui.Signup.SignupActivity
-
+import cap.tone.bangkitflexx.ui.signIn.SignInActivity
+import com.firebase.ui.auth.AuthUI
+import org.jetbrains.anko.clearTask
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.newTask
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
 class NavDrawActivity : AppCompatActivity() {
 
+    private val context: Context? = null
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityNavDrawBinding
 
@@ -48,7 +51,7 @@ class NavDrawActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_project_manager, R.id.nav_chat, R.id.nav_saved_msg, R.id.nav_settings, R.id.nav_about
+                R.id.nav_project_manager, R.id.nav_story_chat, R.id.nav_saved_msg, R.id.nav_settings, R.id.nav_about
             ), drawerLayout
         )
 
@@ -64,6 +67,19 @@ class NavDrawActivity : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.nav_draw, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.logOut -> {
+                AuthUI.getInstance()
+                    .signOut(this@NavDrawActivity.context!!)
+                    .addOnCompleteListener {
+                        startActivity(intentFor<SignInActivity>().newTask().clearTask())
+                    }
+                true
+            } else -> false
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

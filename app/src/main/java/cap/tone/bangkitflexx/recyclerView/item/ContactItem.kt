@@ -1,7 +1,7 @@
 package cap.tone.bangkitflexx.recyclerView.item
 
 import android.content.Context
-import cap.tone.bangkitflexx.Model.User
+import cap.tone.bangkitflexx.model.User
 import cap.tone.bangkitflexx.R
 import cap.tone.bangkitflexx.glide.GlideApp
 import cap.tone.bangkitflexx.util.StorageUtil

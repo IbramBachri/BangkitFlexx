@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import cap.tone.bangkitflexx.Model.PMModel
+import cap.tone.bangkitflexx.model.PMModel
 
 @Dao
 interface PMDao {
