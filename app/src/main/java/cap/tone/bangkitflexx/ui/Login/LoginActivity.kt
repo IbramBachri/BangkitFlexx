@@ -17,10 +17,10 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import cap.tone.bangkitflexx.model.UserModel
-import cap.tone.bangkitflexx.model.UserPreference
 import cap.tone.bangkitflexx.databinding.ActivityLoginBinding
 import cap.tone.bangkitflexx.helper.ViewModelFactory
+import cap.tone.bangkitflexx.model.UserModel
+import cap.tone.bangkitflexx.model.UserPreference
 import cap.tone.bangkitflexx.ui.Signup.SignupActivity
 import cap.tone.bangkitflexx.ui.drawer.NavDrawActivity
 import com.google.firebase.auth.FirebaseAuth

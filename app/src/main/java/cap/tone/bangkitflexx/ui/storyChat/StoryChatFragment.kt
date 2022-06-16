@@ -7,13 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import cap.tone.bangkitflexx.R
+import cap.tone.bangkitflexx.constant.AppConstants
+import cap.tone.bangkitflexx.recyclerView.item.StoryChatItem
+import cap.tone.bangkitflexx.ui.chat.ChatActivity
 import cap.tone.bangkitflexx.util.FirestoreUtil
 import com.google.firebase.firestore.ListenerRegistration
 import com.xwray.groupie.GroupAdapter
+import com.xwray.groupie.OnItemClickListener
 import com.xwray.groupie.Section
 import com.xwray.groupie.kotlinandroidextensions.Item
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
 import kotlinx.android.synthetic.main.fragment_story_chat.*
+import org.jetbrains.anko.support.v4.startActivity
 
 class StoryChatFragment : Fragment() {
 
@@ -39,7 +44,7 @@ class StoryChatFragment : Fragment() {
                 adapter = GroupAdapter<ViewHolder>().apply {
                     storyChatSection = Section(items)
                     add(storyChatSection)
-                    //setOnItemClickListener(onItemClick)
+                    setOnItemClickListener(onItemClick)
                 }
             }
             shouldInitRecyclerView = false
@@ -53,13 +58,13 @@ class StoryChatFragment : Fragment() {
             updateItems()
 
     }
-    //private val onItemClick = OnItemClickListener { item, view ->
-        //if (item is StoryChatItem) {
-            //startActivity<PrivateChatActivity>(
-            //    AppConstants.USER_NAME to item.person.name,
-            //    AppConstants.USER_ID to item.userId
-         //   )
-        //}
-    //}
+    private val onItemClick = OnItemClickListener { item, view ->
+        if (item is StoryChatItem) {
+            startActivity<ChatActivity>(
+                AppConstants.USER_NAME to item.person.name,
+                AppConstants.USER_ID to item.userId
+            )
+        }
+    }
 
 }
