@@ -12,14 +12,10 @@
     </style>
     <style name="regular_15" >
         <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">15sp</item>
     </style>
     <style name="regular_25" >
         <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">25sp</item>
     </style>
 
@@ -53,26 +49,24 @@
     <style name="medium_15_alpha80" >
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:gravity">left</item>
-        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">15sp</item>
         <item name="android:alpha">80</item>
     </style>
     <style name="medium_20_alpha80" >
         <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:gravity">left</item>
-        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">20sp</item>
         <item name="android:alpha">80</item>
     </style>
 
     <style name="regular_10_white" >
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">10sp</item>
     </style>
     <style name="regular_12_white" >
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">12sp</item>
@@ -85,21 +79,27 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="bold_10" >
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
     <style name="bold_17_white" >
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">17sp</item>
     </style>
     <style name="bold_20_white" >
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:gravity">left</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="regular_10_red" >
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/red</item>
         <item name="android:textSize">10sp</item>
@@ -107,7 +107,10 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
-    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+
+    <style name="regular_10">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10sp</item>
     </style>
 </resources>
