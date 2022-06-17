@@ -9,7 +9,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_message"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toTopOf="@+id/edt_text_message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
