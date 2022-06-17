@@ -21,17 +21,18 @@
         <activity
             android:name=".ui.chat.ChatActivity"
             android:exported="false">
-
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.drawer.NavDrawActivity"/>
+            <intent-filter>
+                <action android:name="ChatActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".ui.Intro.MainActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.signIn.SignInActivity"
@@ -49,13 +50,27 @@
             android:exported="false" />
         <activity
             android:name=".ui.projectManagement.PMActivity"
-            android:exported="false" />
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.drawer.NavDrawActivity"/>
+            <intent-filter>
+                <action android:name="ProjectManagerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.projectManagement.HIstoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false" />
