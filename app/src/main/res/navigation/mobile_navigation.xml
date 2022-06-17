@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_story_chat">
+
+    <activity
+        android:id="@+id/nav_project_manager"
+        android:name="cap.tone.bangkitflexx.ui.projectManagement.PMActivity"
+        android:label="project manager"
+        tools:layout="@layout/activity_pmactivity" />
+    <fragment
+        android:id="@+id/nav_story_chat"
+        android:name="cap.tone.bangkitflexx.ui.storyChat.StoryChatFragment"
+        android:label="story chat"
+        tools:layout="@layout/fragment_story_chat" />
+    <fragment
+        android:id="@+id/nav_saved_msg"
+        android:name="cap.tone.bangkitflexx.ui.savedMsg.SavedMsgFragment"
+        android:label="saved message"
+        tools:layout="@layout/fragment_saved_msg" />
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="cap.tone.bangkitflexx.ui.settings.SettingsActivity"
+        android:label="settings"
+        tools:layout="@layout/activity_settings" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="cap.tone.bangkitflexx.ui.savedMsg.SavedMsgFragment"
+        android:label="about"
+        tools:layout="@layout/fragment_saved_msg" />
+    <fragment
+        android:id="@+id/nav_view"
+        android:name="cap.tone.bangkitflexx.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+
+</navigation>

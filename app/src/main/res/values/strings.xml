@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">BangkitFlexx</string>
+    <string name="title_menu_1">Indosat Messenger and Agent Assistant</string>
+    <string name="desc_menu_1">Chat app intended for Gerai Agent, Call Center Agent, Digital Contact Center Agent, L2, and L3 Agent</string>
+    <string name="title_menu_2">End-to-end Encryption</string>
+    <string name="title_menu_3">Screenshot and Root  Device Prevention</string>
+    <string name="desc_menu_3">Screenshot Prevention to prevent information leakage and detect whether device is rooted or not.</string>
+    <string name="title_menu_4">Group Chat Capabilities</string>
+    <string name="desc_menu_4">Provide with many feature such as Group Chat Management, Broadcasting Message, Permission Management</string>
+    <string name="desc_menu_2">Robust API to enable implementation of chat features without dealing with complexities of real-time communication</string>
+    <string name="startmasaging">Start Messaging</string>
+    <string name="title_login_page">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_signup_page">Create Account</string>
+    <string name="name">Name</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="signup">Sign In</string>
+    <string name="title_welcome_page">BangkitFlexx</string>
+    <string name="message_welcome_page">Welcome to BangkitFlexx Chat Apps</string>
+    <string name="logout">LogOut</string>
+    <string name="message_main_page">Ini ACtivity story chat</string>
+    <string name="name_user">Name</string>
+    <string name="last_chat">last chat</string>
+    <string name="Menu">Menu</string>
+    <string name="searc">Search</string>
+
+    <string-array name="data_name">
+        <item>Abdul</item>
+        <item>Bennard</item>
+    </string-array>
+
+    <string-array name="data_lastchat">
+        <item>dimana..........</item>
+        <item>gimana..........</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/img_3</item>
+        <item>@drawable/img_4</item>
+    </integer-array>
+    <string name="title_activity_nav_draw">NavDrawActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="NewChat">New Chat</string>
+    <string name="Division">Division</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="PM">Project Management</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
