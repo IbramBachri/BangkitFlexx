@@ -21,7 +21,13 @@
         <activity
             android:name=".ui.chat.ChatActivity"
             android:exported="false">
-
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.drawer.NavDrawActivity"/>
+            <intent-filter>
+                <action android:name="ChatActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".ui.splash.SplashActivity"
