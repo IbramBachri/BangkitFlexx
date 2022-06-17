@@ -26,6 +26,7 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(na
 
 class SettingsActivity : AppCompatActivity() {
     private val requestCodePermission = 100
+    private var isDark:Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,10 +48,10 @@ class SettingsActivity : AppCompatActivity() {
         ) { isDarkModeActive: Boolean ->
             if (isDarkModeActive) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                switch_theme.isChecked = true
+                isDark = true
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                switch_theme.isChecked = false
+                isDark = false
             }
         }
 
@@ -60,8 +61,14 @@ class SettingsActivity : AppCompatActivity() {
             replaceFragment(EditProfileFragment())
         }
 
-        switch_theme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
-            viewModel.saveThemeSetting(isChecked)
+        btn_change_theme.setOnClickListener {
+            if (isDark) {
+                viewModel.saveThemeSetting(false)
+                isDark = false
+            } else if (!isDark) {
+                viewModel.saveThemeSetting(true)
+                isDark = true
+            }
         }
         //logout.setOnClickListener{
         //    AuthUI.getInstance()

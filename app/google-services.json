@@ -1,33 +1,62 @@
 {
   "project_info": {
-    "project_number": "861878792161",
-    "project_id": "bangkitflex-chatapp",
-    "storage_bucket": "bangkitflex-chatapp.appspot.com"
+    "project_number": "214702570633",
+    "project_id": "chat-app-32141",
+    "storage_bucket": "chat-app-32141.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:861878792161:android:3d680cd393a907622baca0",
+        "mobilesdk_app_id": "1:214702570633:android:5e9cbfd47e62619daa1a58",
         "android_client_info": {
           "package_name": "cap.tone.bangkitflexx"
         }
       },
       "oauth_client": [
         {
-          "client_id": "861878792161-ci2gksuujjsjv4l9k0s81k13eehs4vht.apps.googleusercontent.com",
+          "client_id": "214702570633-joqfdbl37de9elsvn98sbp9rm40irlsl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCdDrc4IlxoGa53F_-ywTYYdAbuCJ8_boc"
+          "current_key": "AIzaSyAKMjPMjbnlzitkLooHXgg8PyrIh5ymODA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "861878792161-ci2gksuujjsjv4l9k0s81k13eehs4vht.apps.googleusercontent.com",
+              "client_id": "214702570633-joqfdbl37de9elsvn98sbp9rm40irlsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214702570633:android:1e3c1bcc49d1139aaa1a58",
+        "android_client_info": {
+          "package_name": "com.belajar.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214702570633-joqfdbl37de9elsvn98sbp9rm40irlsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMjPMjbnlzitkLooHXgg8PyrIh5ymODA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214702570633-joqfdbl37de9elsvn98sbp9rm40irlsl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
