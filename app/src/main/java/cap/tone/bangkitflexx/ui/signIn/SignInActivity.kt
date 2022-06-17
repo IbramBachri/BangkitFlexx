@@ -51,10 +51,6 @@ class SignInActivity : AppCompatActivity() {
                 val progressDialog = indeterminateProgressDialog("Setting up your account")
                 FirestoreUtil.initCurrentUserIfFirstTime {
                     startActivity(intentFor<NavDrawActivity>().newTask().clearTask())
-
-                    //val registrationToken = FirebaseInstanceId.getInstance().token
-                    //MyFirebaseInstanceIDService.addTokenToFirestore(registrationToken)
-
                     progressDialog.dismiss()
                 }
             }

@@ -23,7 +23,7 @@
 
     <Button
         android:id="@+id/btn_signin"
-        style="@style/regular_15_yellow"
+        style="@style/regular_15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
